@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Student Attendance Tracking</string>
+    <string name="mesg1">Enter your email address below to get a password recovery</string>
+    <string name="Mesg2">SEND</string>
+    <string name="Mesg3">Remember me</string>
+    <string name="Mesg4">Forgot password ?</string>
+    <string name="Mesg5">LOGIN</string>
+    <string name="Mesg6">SIGN UP</string>
+    <string name="Mesg7">I agree to terms and conditions</string>
+    <string name="Uname">Username</string>
+    <string name="facebook">
+
+        <a href="https://en-gb.facebook.com/login/">Sign in with facebook</a>
+
+    </string>
+</resources>
