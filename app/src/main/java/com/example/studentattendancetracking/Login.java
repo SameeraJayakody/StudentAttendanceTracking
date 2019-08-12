@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 public class Login extends AppCompatActivity {
 
-    Button bn1;
+    Button bn1,loginbtn;
     TextView bn2;
 
     @Override
@@ -23,9 +23,19 @@ public class Login extends AppCompatActivity {
         TextView txt = findViewById(R.id.txt4);
         txt.setMovementMethod(LinkMovementMethod.getInstance());
 
-
+        loginbtn = findViewById(R.id.loginButton);
         bn1 = findViewById(R.id.signupButton);
         bn2 = findViewById(R.id.forgot);
+
+        loginbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(Login.this,TestDashboard.class);
+                startActivity(intent);
+
+            }
+        });
 
         bn2.setOnClickListener(new View.OnClickListener() {
             @Override

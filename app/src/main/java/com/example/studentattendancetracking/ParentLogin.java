@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 public class ParentLogin extends AppCompatActivity {
 
-    Button btn2;
+    Button btn2,dashbtn;
     TextView forget;
 
     @Override
@@ -22,6 +22,18 @@ public class ParentLogin extends AppCompatActivity {
 
         TextView txt1 = findViewById(R.id.flogin);
         txt1.setMovementMethod(LinkMovementMethod.getInstance());
+
+        dashbtn = findViewById(R.id.log);
+
+        dashbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(ParentLogin.this,TestDashboard.class);
+                startActivity(intent);
+
+            }
+        });
 
         btn2 = findViewById(R.id.register);
         forget = findViewById(R.id.forgot1);
